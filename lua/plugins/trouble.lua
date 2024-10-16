@@ -7,7 +7,7 @@ return {
 		keys = {
 			{
 				"<leader>xx",
-				":Trouble diagnostics toggle<CR,
+				":Trouble diagnostics toggle<CR>",
 				desc = "Diagnostics (Trouble)",
 			},
 		},
