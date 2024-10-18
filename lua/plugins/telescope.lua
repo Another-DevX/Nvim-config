@@ -25,6 +25,7 @@ return {
 			{ noremap = true, silent = true }
 		)
 		vim.api.nvim_set_keymap("n", "<leader>fb", "<cmd>Telescope builtin<CR>", { noremap = true, silent = true })
+		vim.api.nvim_set_keymap("n", "<leader>th", ":Telescope colorscheme<CR>", { noremap = true, silent = true })
 		vim.api.nvim_set_keymap("n", "<leader>fd", "<cmd>Telescope diagnostics<CR>", { noremap = true, silent = true })
 	end,
 }

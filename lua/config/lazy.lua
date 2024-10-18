@@ -31,6 +31,10 @@ vim.opt.clipboard = "unnamedplus"
 vim.opt.confirm = true
 vim.opt.hlsearch = true
 vim.opt.cursorline = true
+vim.opt.termguicolors = true
+vim.opt.scrolloff = 8
+vim.o.number = true
+vim.o.relativenumber = true
 
 -- Setup lazy.nvim
 require("lazy").setup({
