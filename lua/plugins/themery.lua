@@ -29,7 +29,16 @@ return {
     ]],
 						after = [[-- Add additional configurations if necessary]],
 					},
+					{
+						name = "Neon CherryKiss",
+						colorscheme = "neon-cherrykiss-night",
+						before = [[
+      vim.opt.background = "dark"
+    ]],
+						after = [[-- Add additional configurations if necessary]],
+					},
 				},
+
 				livePreview = true,
 			})
 		end,
@@ -37,5 +46,15 @@ return {
 	{
 		{ "folke/tokyonight.nvim" },
 		{ "morhetz/gruvbox" },
+		{
+			"Zeioth/neon.nvim",
+			opts = {
+				dim_inactive = false,
+				styles = {
+					comments = { italic = true },
+					keywords = { italic = true },
+				},
+			},
+		},
 	},
 }
