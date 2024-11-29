@@ -52,11 +52,10 @@ return {
 	},
 	config = function(_, opts)
 		require("neo-tree").setup(opts)
-		-- Mapea <leader>E para abrir Neo-tree
 		vim.api.nvim_set_keymap(
 			"n",
 			"<leader>E",
-			"<cmd>Neotree toggle<CR>",
+			"<cmd>Neotree reveal<CR>",
 			{ noremap = true, silent = true, desc = "Toggle Neo-tree" }
 		)
 	end,
